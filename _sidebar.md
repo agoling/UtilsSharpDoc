@@ -1,4 +1,4 @@
-* [**UtilsSharp帮助类**](Guide/UtilsSharp/Main.md) 
+* [**UtilsSharp帮助类**](README.md) 
  * [AppsettingsHelper](Guide/UtilsSharp/AppsettingsHelper.md)
  * [AssemblyHelper](Guide/UtilsSharp/AssemblyHelper.md)
  * [CacheHelper](Guide/UtilsSharp/CacheHelper.md)

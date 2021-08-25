@@ -23,4 +23,4 @@ img[alt="logo"]{
 - 日志帮助类：UtilsSharp.Logger、UtilsSharp.Logger.Config
 
 [GitHub](https://github.com/agoling/UtilsSharp.Standard)
-[开始使用](Guide/UtilsSharp/Main.md) 
+[开始使用](README.md) 
