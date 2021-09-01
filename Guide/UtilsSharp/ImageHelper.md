@@ -201,6 +201,16 @@ static Bitmap RevPicUd(Bitmap mybm, int width, int height)
 static bool Compress(string oldfile, string newfile)
 ```
 
+```c#
+/// <summary>
+/// 图片无损高质量压缩
+/// </summary>
+/// <param name="bitmap">要压缩的图片对象</param>
+/// <param name="quality">压缩质量:数字越小压缩率越高1-100</param>
+/// <param name="newfile">压缩完的图片文件地址</param>
+static bool Compress(Image bitmap, int quality, string newfile)
+```
+
 #### 17、图片灰度化：Gray
 
 ```c#
@@ -233,5 +243,26 @@ static Bitmap BwPic(Bitmap mybm, int width, int height)
 /// <param name="pPath">图片路径</param>
 /// <param name="pSavedPath">保存路径</param>
 static void GetFrames(string pPath, string pSavedPath)
+```
+
+#### 20、图片地址转图片：UrlToImage
+
+```c#
+/// <summary>
+/// 图片地址转图片
+/// 图片数目若与实际下载链接数目不符说明下载失败
+/// 自动过滤下载失败的图片
+/// </summary>
+/// <param name="imgUrls">图片地址集合</param>
+static List<Image> UrlToImage(List<string> imgUrls)
+```
+
+```c#
+/// <summary>
+/// 图片地址转图片
+/// 返回null说明下载失败
+/// </summary>
+/// <param name="imgUrl">图片地址</param>
+static Image UrlToImage(string imgUrl)
 ```
 
