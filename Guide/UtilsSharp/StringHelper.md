@@ -126,3 +126,27 @@ static string DeCompress(string str, Encoding encoding = null)
 static string HideMobilePhone(string mobilePhone)
 ```
 
+#### 12、Stream转String：StreamToString
+
+```c#
+/// <summary>
+/// Stream转String
+/// </summary>
+/// <param name="stream">stream对象</param>
+/// <param name="encoding">编码</param>
+/// <returns></returns>
+static string StreamToString(Stream stream, Encoding encoding = null)
+```
+
+#### 13、String转Stream：StringToStream
+
+```c#
+/// <summary>
+/// String转Stream
+/// </summary>
+/// <param name="str">字符串</param>
+/// <param name="encoding">编码</param>
+/// <returns></returns>
+static Stream StringToStream(string str, Encoding encoding = null)
+```
+

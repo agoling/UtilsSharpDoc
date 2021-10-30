@@ -183,3 +183,29 @@ static string ToAesEncrypt(this string str, string secretKey)
 static string ToAesDecrypt(this string str, string secretKey)
 ```
 
+#### 16、HmacSha1加密：ToHmacSha1Encrypt
+
+```c#
+/// <summary>
+/// HmacSha1加密
+/// </summary>
+/// <param name="str">要加密的原串</param>
+///<param name="key">私钥</param>
+/// <param name="encode"></param>
+/// <returns></returns>
+static string ToHmacSha1Encrypt(this string str, string key, Encoding encode)
+```
+
+#### 17、HmacSha1加密(Base64方式)：ToBase64HmacSha1Encrypt
+
+```c#
+/// <summary>
+/// HmacSha1加密(Base64方式)
+/// </summary>
+/// <param name="str">要加密的原串</param>
+///<param name="key">私钥</param>
+/// <param name="encode"></param>
+/// <returns></returns>
+static string ToBase64HmacSha1Encrypt(this string str, string key, Encoding encode)
+```
+
