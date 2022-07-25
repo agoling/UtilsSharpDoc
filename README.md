@@ -7,35 +7,47 @@
 
 ####  一、命名规范
 
-##### 1、返回参小驼峰命名法
+##### 1、小驼峰：
 
-除第一个单词之外，其他单词首字母大写，例如：`getKeyword`，`getOccResponse`
+除第一个单词之外，其他单词首字母大写
 
-##### 2、方法命名规范
+例如： int `myStudentCount`;
 
-获取单个对象的方法用`Get`作为前缀，如：`GetRecord`
+用于：变量名
 
-获取多个对象的方法用`Search`作为前缀，如：`SearchRecord`
+##### 2、大驼峰：
 
-添加的方法用`Add`作为前缀，如：`AddRecord`
+相比小驼峰法，大驼峰法（即帕斯卡命名法）把第一个单词的首字母也大写了
 
-修改的方法用`Modify`作为前缀，如：`ModifyRecord`
+例如： public class `DataBaseUser`
 
-(添加+修改)的方法用`Save`作为前缀，如：`SaveRecord`
+用于：命名空间、类名、方法名、属性名 
 
-删除的方法用`Delete`作为前缀，如：`DeleteRecord`
+##### 3、方法命名规范
 
-清空的方法用`Clear`作为前缀，如：`ClearRecord`
+获取单个对象的方法用`Get`作为前缀，如：`GetRecord`。
 
-判断类的方法用`Is`作为前缀，如：`IsRegister`,`IsExist`
+获取多个对象的方法用`Search`作为前缀，如：`SearchRecord`。
 
-##### 3、变量命名规范
+添加的方法用`Add`作为前缀，如：`AddRecord`。
+
+修改的方法用`Modify`作为前缀，如：`ModifyRecord`。
+
+(添加+修改)的方法用`Save`作为前缀，如：`SaveRecord`。
+
+删除的方法用`Delete`作为前缀，如：`DeleteRecord`。
+
+清空的方法用`Clear`作为前缀，如：`ClearRecord`。
+
+判断类的方法用`Is`作为前缀，如：`IsRegister`,`IsExist`。
+
+##### 4、变量命名规范
 
 变量取名应见名识意,尽量用英文单词,而不是缩写
 
 例如：`PageIndex`, `PageSize`
 
-##### 4、入参、出参类名统一，入参+Request，出参+Response
+##### 5、入参、出参类名统一，入参+Request，出参+Response
 
 例如：
 
