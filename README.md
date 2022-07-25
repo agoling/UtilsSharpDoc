@@ -11,7 +11,7 @@
 
 除第一个单词之外，其他单词首字母大写
 
-例如： int `myStudentCount`;
+例如： int `myStudentCount`
 
 用于：变量名
 
@@ -25,21 +25,21 @@
 
 ##### 3、方法命名规范
 
-获取单个对象的方法用`Get`作为前缀，如：`GetRecord`。
+获取单个对象的方法用`Get`作为前缀，如：`GetRecord`
 
-获取多个对象的方法用`Search`作为前缀，如：`SearchRecord`。
+获取多个对象的方法用`Search`作为前缀，如：`SearchRecord`
 
-添加的方法用`Add`作为前缀，如：`AddRecord`。
+添加的方法用`Add`作为前缀，如：`AddRecord`
 
-修改的方法用`Modify`作为前缀，如：`ModifyRecord`。
+修改的方法用`Modify`作为前缀，如：`ModifyRecord`
 
-(添加+修改)的方法用`Save`作为前缀，如：`SaveRecord`。
+(添加+修改)的方法用`Save`作为前缀，如：`SaveRecord`
 
-删除的方法用`Delete`作为前缀，如：`DeleteRecord`。
+删除的方法用`Delete`作为前缀，如：`DeleteRecord`
 
-清空的方法用`Clear`作为前缀，如：`ClearRecord`。
+清空的方法用`Clear`作为前缀，如：`ClearRecord`
 
-判断类的方法用`Is`作为前缀，如：`IsRegister`,`IsExist`。
+判断类的方法用`Is`作为前缀，如：`IsRegister`,`IsExist`
 
 ##### 4、变量命名规范
 
