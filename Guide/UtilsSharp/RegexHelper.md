@@ -137,11 +137,7 @@ static bool IsDate(ref string date)
 #### 10、验证身份证是否合法，如果为空认为验证不合格：IsIdCard
 
 ```c#
-/// <summary>
-/// 验证身份证是否合法，如果为空认为验证不合格
-/// </summary>
-/// <param name="idCard">要验证的身份证</param>        
-static bool IsIdCard(string idCard)
+//该接口已经转到 IdCardHelper
 ```
 
 #### 11、检测客户输入的字符串是否有效：IsValidInput

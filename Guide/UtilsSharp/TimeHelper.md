@@ -158,3 +158,25 @@ static long DateTimeToTimeStamp(DateTime dateTime, TimeStampType type = TimeStam
 static int GetWeekOfYear(DateTime dt)
 ```
 
+#### 14、当前时间是否周末：IsWeekend
+
+```c#
+/// <summary>
+/// 当前时间是否周末
+/// </summary>
+/// <param name="dateTime">时间点</param>
+/// <returns></returns>
+static bool IsWeekend(DateTime dateTime)
+```
+
+#### 15、当前时间是否工作日：IsWeekday
+
+```c#
+/// <summary>
+/// 当前时间是否工作日
+/// </summary>
+/// <param name="dateTime">时间点</param>
+/// <returns></returns>
+static bool IsWeekday(DateTime dateTime)
+```
+

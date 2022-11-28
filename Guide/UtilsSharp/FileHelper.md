@@ -64,3 +64,23 @@ static byte[] StreamToBytes(Stream stream)
 static Stream BytesToStream(byte[] bytes)
 ```
 
+#### 6、创建文件，如果文件不存在：CreateIfNotExists
+
+```c#
+/// <summary>
+/// 创建文件，如果文件不存在
+/// </summary>
+/// <param name="fileName">要创建的文件</param>
+static void CreateIfNotExists(string fileName)
+```
+
+#### 7、删除指定文件：DeleteIfExists
+
+```c#
+/// <summary>
+/// 删除指定文件
+/// </summary>
+/// <param name="fileName">要删除的文件名</param>
+static void DeleteIfExists(string fileName)
+```
+
