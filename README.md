@@ -27,7 +27,9 @@
 
 获取单个对象的方法用`Get`作为前缀，如：`GetRecord`
 
-获取多个对象的方法用`Search`作为前缀，如：`SearchRecord`
+获取多个对象的方法用`Get`作为前缀，最后面加`s`，如：`GetRecords`
+
+分页搜索的方法用`Search`作为前缀，如：`SearchRecord`
 
 添加的方法用`Add`作为前缀，如：`AddRecord`
 
@@ -64,7 +66,7 @@ public class LoginRequest
    /// <summary>
    /// 密码
    /// </summary>
-   public string UserPsw { set; get; }
+   public string UserPassword { set; get; }
 
 }
 /// <summary>
@@ -104,7 +106,7 @@ public BaseResult<LoginResponse> Login(LoginRequest request)
           result.SetError("用户名不能为空", BaseStateCode.参数不能为空);
           return result;
        }
-       if (string.IsNullOrEmpty(request.UserPsw))
+       if (string.IsNullOrEmpty(request.UserPassword))
        {
           result.SetError("密码不能为空", BaseStateCode.参数不能为空);
           return result;
@@ -208,7 +210,7 @@ public BasePagedResult<LoginResponse> Search(BaseSortPage request)
         "pageSize": 10,//分页数量
         "totalCount": 100,//总条数
         "totalPages": 10,//总页数 
-        "orderBy": null,//排序
+        "orderBy": "createTime:desc",//排序
         "hasPreviousPage": false,//是否有上一页
         "hasNextPage": true,//是否有下一页
         "list": [    //返回的列表数据
@@ -225,7 +227,7 @@ public BasePagedResult<LoginResponse> Search(BaseSortPage request)
                 "userName": "xxx3"
             }
         ],
-        "params": {
+        "params": {  //入参 object类型
             "sortField": "createTime",//排序字段
             "sortType": "desc",//asc 升序  desc降序
             "pageIndex": 1,
