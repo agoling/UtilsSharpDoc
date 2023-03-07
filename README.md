@@ -131,12 +131,12 @@ public BaseResult<LoginResponse> Login(LoginRequest request)
 
 ```json
 {
-    "result": {
+    "result": { //result 是个泛型 
         "token": "ecbcc910fab0497c933d69906188ad0e",
         "userName": "xxx"
     },
-    "code": 200,
-    "msg": "登入成功"
+    "code": 200,//成功码 错误码 可以参考文章末尾
+    "msg": "登入成功" //提示信息
 }
 ```
 
