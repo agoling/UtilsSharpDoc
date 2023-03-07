@@ -45,7 +45,7 @@
 
 变量取名应见名识意,尽量用英文单词,而不是缩写
 
-例如：`PageIndex`, `PageSize`
+例如：`pageIndex`, `pageSize`
 
 ##### 5、入参、出参类名统一，入参+Request，出参+Response
 
@@ -226,8 +226,8 @@ public BasePagedResult<LoginResponse> Search(BaseSortPage request)
             }
         ],
         "params": {
-            "sortField": null,
-            "sortType": null,
+            "sortField": "createTime",//排序字段
+            "sortType": "desc",//asc 升序  desc降序
             "pageIndex": 1,
             "pageSize": 10,
             "keyword": "连衣裙"
@@ -255,3 +255,8 @@ public BasePagedResult<LoginResponse> Search(BaseSortPage request)
 | 8000   | dbError       | 数据库异常     |
 | 9000   | SystemError   | 系统错误       |
 
+以上给到的错误码是基础错误码，其他错误码可以根据自己业务新增。新增的业务错误码要在基础错误码范围内：
+
+比如授权类的错误码可以是4000~5000之间的数字，网络类的错误码可以是：3000~4000之间的数字，系统类的错误码可以是9000~10000之间的数字
+
+数据验证类的错误码可以是6000~7000之间的数字等。
