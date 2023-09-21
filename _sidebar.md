@@ -31,5 +31,8 @@
  * [VerificationCodeHelper](Guide/UtilsSharp/VerificationCodeHelper.md)
  * [WebHelper](Guide/UtilsSharp/WebHelper.md)
  * [WinCmdHelper](Guide/UtilsSharp/WinCmdHelper.md)
-* **UtilsSharp.OssHelper**
+* [**UtilsSharp.OssHelper**](Guide/UtilsSharp.Office/ExcelHelper.md)
+* [**UtilsSharp.Office**](Guide/UtilsSharp.Office/ExcelHelper.md)
+ * [ExcelHelper](Guide/UtilsSharp.Office/ExcelHelper.md)
+ * [WordHelper](Guide/UtilsSharp.Office/WordHelper.md)
 
