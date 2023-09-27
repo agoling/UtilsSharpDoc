@@ -3,10 +3,13 @@
 
 本类使用方法：
 
+nuget安装UtilsSharp.Office包最新版，如果有用到List转DataTable或者DataTable转List需安装UtilsSharp公共包最新版。
+
 #### 1、数据导入：DataTableToExcel
 
 ```c#
 using UtilsSharp;
+using UtilsSharp.Office
 
 /// <summary>
 /// DataTable方式导入
@@ -29,6 +32,8 @@ public static void Import()
 #### 2、数据导入：ListToExcel
 
 ```c#
+using UtilsSharp.Office
+
 /// <summary>
 /// List方式导入
 /// </summary>
@@ -49,6 +54,8 @@ public static void Import()
 #### 3、数据导出：ExcelToDataTable
 
 ```c#
+using UtilsSharp.Office
+
 /// <summary>
 /// DataTable方式导出
 /// </summary>
@@ -62,7 +69,9 @@ public static void Export()
 #### 4、数据导出：ExcelToList
 
 ```c#
- /// <summary>
+using UtilsSharp.Office
+
+/// <summary>
  /// 数据导出
  /// </summary>
  public static void Export()

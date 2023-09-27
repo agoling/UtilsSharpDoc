@@ -3,6 +3,8 @@
 
 本类需要实例化后使用，使用方法：
 
+nuget安装UtilsSharp.Office包最新版。
+
 ```c#
 WordHelper wordHelper = new WordHelper();
 ```
@@ -10,7 +12,9 @@ WordHelper wordHelper = new WordHelper();
 #### 1、Word数据导出例子
 
 ```c#
- /// <summary>
+using UtilsSharp.Office
+
+/// <summary>
  /// Word文档生成
  /// </summary>
  public static void Word()
