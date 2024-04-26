@@ -6,7 +6,7 @@ Exception异常处理，主要分为两个部分，一种是aop全局拦截，�
 
 ##### 使用方法：
 
-1、Try Catch 异常捕获：需要安装UtilsSharp工具类。注意：包版本要3.4及以上。
+1、Try Catch 异常捕获：需要安装UtilsSharp或者UtilsSharp.Shared工具类。注意：包版本要3.4及以上。
 
 2、Aop全局捕获：需要在控制器层安装UtilsSharp.AspNetCore工具类。注意：包版本要3.4及以上,只有方法中没有做try catch的异常才会被捕捉到
 
