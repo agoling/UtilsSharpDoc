@@ -35,4 +35,6 @@
 * [**UtilsSharp.Office**](Guide/UtilsSharp.Office/ExcelHelper.md)
  * [ExcelHelper](Guide/UtilsSharp.Office/ExcelHelper.md)
  * [WordHelper](Guide/UtilsSharp.Office/WordHelper.md)
+* [**UtilsSharp.AspNetCore**](Guide/UtilsSharp.AspNetCore/Exception.md)
+ * [Exception](Guide/UtilsSharp.AspNetCore/Exception.md)
 

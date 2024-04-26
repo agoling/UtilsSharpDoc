@@ -118,10 +118,8 @@ public BaseResult<LoginResponse> Login(LoginRequest request)
     }
     catch (Exception ex)
     {
-      var errorCode = Guid.NewGuid().ToString("N");
-      //这边用errorCode作为日志主键，把错误信息写入到日志
-      var errorMessage = errorCode.ToMsgException();
-      result.SetError(errorMessage, BaseStateCode.TryCatch异常错误);
+      var logId = LogHelper.Error($"异常", ex);
+      result.SetException(ex, logId);
       return result;
     }
 }
@@ -192,10 +190,8 @@ public BasePagedResult<LoginResponse> Search(BaseSortPage request)
     }
     catch (Exception ex)
     {
-      var errorCode = Guid.NewGuid().ToString("N");
-      //这边用errorCode作为日志主键，把错误信息写入到日志
-      var errorMessage = errorCode.ToMsgException();
-      result.SetError(errorMessage, BaseStateCode.TryCatch异常错误);
+      var logId = LogHelper.Error($"异常", ex);
+      result.SetException(ex, logId);
       return result;
     }
 }
