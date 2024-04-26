@@ -41,7 +41,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 }
 ```
-第一种返回效果：
+设置字符串返回效果：
 
 ![](Image\20240426111800.jpg) 
 
@@ -73,7 +73,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 }
 ```
-第二种返回效果：
+设置Exception对象返回效果：
 
 ![](Image\20240426115738.jpg)
 
@@ -111,7 +111,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 }
 ```
-第三种返回效果：
+设置Exception对象、日志Id、匹配规则返回效果：
 
 ![](Image\20240426113806.jpg)
 
@@ -149,7 +149,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 }
 ```
-第四种返回效果：
+设置Exception对象、日志Id、匹配规则、自定义提示信息返回效果：
 
 ![](Image\20240426113256.jpg)
 
@@ -189,7 +189,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 }
 ```
-第五种返回效果：
+设置Exception对象、日志Id（默认）返回效果：
 
 ![](Image\20240426112538.jpg)
 
