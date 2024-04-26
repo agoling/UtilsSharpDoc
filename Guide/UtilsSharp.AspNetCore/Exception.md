@@ -42,7 +42,8 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
 }
 ```
 第一种返回效果：
-![](Image\20240426111800.jpg)
+
+![](Image\20240426111800.jpg) 
 
 ##### 2、设置Exception对象
 ```c#
@@ -73,6 +74,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
 }
 ```
 第二种返回效果：
+
 ![](Image\20240426115738.jpg)
 
 ##### 3、设置Exception对象、日志Id、匹配规则
@@ -110,6 +112,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
 }
 ```
 第三种返回效果：
+
 ![](Image\20240426113806.jpg)
 
 ##### 4、设置Exception对象、日志Id、匹配规则、自定义提示信息
@@ -147,6 +150,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
 }
 ```
 第四种返回效果：
+
 ![](Image\20240426113256.jpg)
 
 ##### 5、设置Exception对象、日志Id（默认）
@@ -186,6 +190,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
 }
 ```
 第五种返回效果：
+
 ![](Image\20240426112538.jpg)
 
 #### 二、Aop全局捕获
@@ -260,6 +265,7 @@ public BaseResult<GetUserInfoResponse> GetUserInfo(GetUserInfoRequest request)
     }
 ```
 命中Unauthorized这个词的返回效果：
+
 ![](Image\20240426143450.jpg)
 
 ##### 2、如果要全局自定义拦截规则，则要重写LoggerAsyncInterceptor类
@@ -295,5 +301,6 @@ public class LoggerAsyncInterceptorNew: LoggerAsyncInterceptor
 }
 ```
 命中db error这个词的返回效果：
+
 ![](Image\20240426143229.jpg)
 
